@@ -24,5 +24,6 @@ install:
 test_script:
   - sbt "-Dsbt.build.version=1.0.4" universal:packageBin
   - cd citest
+  - test.bat
   - test3/test3.bat
   - test4/test4.bat
