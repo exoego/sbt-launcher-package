@@ -10,7 +10,7 @@ SET BASE_DIR=%CD%
 SET SCRIPT_DIR=%~dp0
 
 CD %SCRIPT_DIR%
-"%SCRIPT_DIR%..\freshly-baked\sbt\bin\sbt" check
+"C:\projects\sbt-launcher-package\citest\freshly-baked\sbt\bin\sbt" check
 CD %BASE_DIR%
 
 ENDLOCAL
