@@ -5,7 +5,7 @@ init:
 
 install:
   - cinst jdk8 -params 'installdir=C:\\jdk8'
-  - cinst jdk9 -version 9.0.1.11 -params 'installdir=C:\\jdk9'
+  - cinst jdk9 -version 9.0.4.11 -params 'installdir=C:\\jdk9'
   - SET JAVA_HOME=C:\jdk8
   - SET PATH=C:\jdk8\bin;%PATH%
 
@@ -25,5 +25,4 @@ test_script:
   - sbt "-Dsbt.build.version=1.0.4" universal:packageBin
   - cd citest
   - test.bat
-  - test1.bat
-  - test2.bat
+  - test3/test3.bat
